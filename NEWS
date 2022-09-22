@@ -1,3 +1,6 @@
+Changes in version 1.2.1 (2022-09-22)
++ Update REST API address.
+
 Changes in version 1.1.1 (2022-03-17)
 + Upgrade maintenance files.
 + Correct instantiation example.
