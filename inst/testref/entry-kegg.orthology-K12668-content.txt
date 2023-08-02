@@ -1,157 +1,288 @@
 ENTRY       K12668                      KO
-NAME        OST2, DAD1
-DEFINITION  oligosaccharyltransferase complex subunit epsilon
-PATHWAY     ko00510  N-Glycan biosynthesis
-            ko00513  Various types of N-glycan biosynthesis
-            ko01100  Metabolic pathways
-            ko04141  Protein processing in endoplasmic reticulum
+SYMBOL      DAD1, OST2
+NAME        dolichyl-diphosphooligosaccharide---protein glycosyltransferase subunit DAD1/OST2
+PATHWAY     map00510  N-Glycan biosynthesis
+            map00513  Various types of N-glycan biosynthesis
+            map01100  Metabolic pathways
+            map04141  Protein processing in endoplasmic reticulum
 MODULE      M00072  N-glycosylation by oligosaccharyltransferase
 BRITE       KEGG Orthology (KO) [BR:ko00001]
              09100 Metabolism
               09107 Glycan biosynthesis and metabolism
                00510 N-Glycan biosynthesis
-                K12668  OST2, DAD1; oligosaccharyltransferase complex subunit epsilon
+                K12668  DAD1, OST2; dolichyl-diphosphooligosaccharide---protein glycosyltransferase subunit DAD1/OST2
                00513 Various types of N-glycan biosynthesis
-                K12668  OST2, DAD1; oligosaccharyltransferase complex subunit epsilon
+                K12668  DAD1, OST2; dolichyl-diphosphooligosaccharide---protein glycosyltransferase subunit DAD1/OST2
              09120 Genetic Information Processing
               09123 Folding, sorting and degradation
                04141 Protein processing in endoplasmic reticulum
-                K12668  OST2, DAD1; oligosaccharyltransferase complex subunit epsilon
+                K12668  DAD1, OST2; dolichyl-diphosphooligosaccharide---protein glycosyltransferase subunit DAD1/OST2
 DBLINKS     RN: R05976
             GO: 0008250
+            TC: 9.B.142.3
 GENES       HSA: 1603(DAD1)
             PTR: 452783(DAD1)
-            PPS: 100993751(DAD1)
+            PPS: 100993751(DAD1) 117975472
             GGO: 101135263(DAD1)
             PON: 100172455(DAD1)
             NLE: 100584353(DAD1)
+            HMH: 116484563(DAD1)
             MCC: 711840(DAD1)
             MCF: 102127546(DAD1)
+            MTHB: 126958361
+            MNI: 105499634(DAD1)
             CSAB: 103231439(DAD1)
             CATY: 105598800(DAD1)
+            PANU: 101017976(DAD1)
+            TGE: 112628666(DAD1)
+            MLEU: 105547163(DAD1)
             RRO: 104674126(DAD1)
             RBB: 108523574(DAD1)
             TFN: 117070003(DAD1)
+            PTEH: 111554711(DAD1)
+            CANG: 105503795(DAD1)
             CJC: 100385974(DAD1)
             SBQ: 101043184(DAD1)
+            CIMI: 108315231 108315232
+            CSYR: 103264774 103267695(DAD1)
             MMUR: 105864738(DAD1)
+            LCAT: 123620666(DAD1)
+            PCOQ: 105814269(DAD1)
+            OGA: 100956353(DAD1)
             MMU: 13135(Dad1)
             MCAL: 110309356(Dad1)
             MPAH: 110325627(Dad1)
             RNO: 192275(Dad1)
             MCOC: 116084297(Dad1)
+            ANU: 117705366(Dad1)
             MUN: 110550044(Dad1)
             CGE: 100767387(Dad1)
+            MAUA: 101827723(Dad1)
+            PROB: 127230427(Dad1)
             PLEU: 114708708(Dad1)
+            MORG: 121435040(Dad1)
+            MFOT: 126509732
+            AAMP: 119800381(Dad1)
             NGI: 103739485(Dad1)
             HGL: 101706224(Dad1)
+            CPOC: 100733152(Dad1)
             CCAN: 109697565(Dad1)
-            OCU: 100355816(DAD1)
+            DORD: 105992474(Dad1)
+            DSP: 122113450(Dad1)
+            PLOP: 125363201(Dad1)
+            NCAR: 124977024 124984804
+            OCU: 100355816
+            OPI: 101536493(DAD1)
             TUP: 102501476(DAD1)
+            GVR: 103605475(DAD1)
             CFA: 480238(DAD1)
+            CLUD: 112657994(DAD1)
             VVP: 112926490(DAD1)
             VLG: 121493682(DAD1)
+            NPO: 129499535(DAD1)
             AML: 100470635(DAD1)
             UMR: 103681026(DAD1)
             UAH: 113246030(DAD1)
-            ORO: 101371584(DAD1)
+            UAR: 123795806(DAD1)
             ELK: 111160849
+            LLV: 125104037
             MPUF: 101691921 101694215(DAD1)
+            NVS: 122893292(DAD1)
+            ORO: 101371584(DAD1)
             EJU: 114217915(DAD1)
+            ZCA: 113909070(DAD1) 113928932
+            MLX: 118003056(DAD1)
+            NSU: 110585127(DAD1)
+            LWW: 102745066(DAD1)
             FCA: 101088756(DAD1)
+            PYU: 121031477(DAD1)
+            PCOO: 112855312(DAD1)
+            PBG: 122468864(DAD1)
+            LRUF: 124508801
             PTG: 102961657(DAD1)
             PPAD: 109255678(DAD1)
-            AJU: 106988238(DAD1)
+            PUC: 125908831
+            AJU: 106988238
             HHV: 120240447(DAD1)
             BTA: 614538(DAD1)
             BOM: 102284783(DAD1)
             BIU: 109564827(DAD1)
             BBUB: 102415672(DAD1)
+            BBIS: 104981975(DAD1)
             CHX: 100860963(DAD1)
             OAS: 101106014(DAD1)
+            BTAX: 128054174(DAD1)
             ODA: 120853407(DAD1)
+            CCAD: 122422702 122443229(DAD1)
+            MBEZ: 129562831(DAD1)
             SSC: 396984(DAD1)
             CFR: 102521848(DAD1)
+            CBAI: 105068758(DAD1)
             CDK: 105096963(DAD1)
+            VPC: 102527187(DAD1)
             BACU: 103000655(DAD1)
             LVE: 103079823(DAD1)
             OOR: 101286583(DAD1)
             DLE: 111164197(DAD1)
             PCAD: 102991436(DAD1)
+            PSIU: 116748594(DAD1)
+            NASI: 112397486(DAD1)
             ECB: 100053042(DAD1)
             EPZ: 103560892(DAD1)
             EAI: 106840668(DAD1)
             MYB: 102263691(DAD1)
             MYD: 102771317(DAD1)
             MMYO: 118679417(DAD1)
+            MLF: 102429327(DAD1)
             MNA: 107531686(DAD1)
+            PKL: 118724877(DAD1)
+            EFUS: 103301535(DAD1)
             HAI: 109393598(DAD1)
             DRO: 112301551(DAD1)
             SHON: 118980882(DAD1)
             AJM: 119037128(DAD1)
+            PDIC: 114492347(DAD1)
+            PHAS: 123820468(DAD1)
             MMF: 118637372(DAD1)
+            RFQ: 117024015(DAD1)
             PALE: 102889239(DAD1)
+            PGIG: 120593960(DAD1)
+            PVP: 105300513(DAD1)
             RAY: 107503908(DAD1)
             MJV: 108407836(DAD1)
+            TOD: 119238900(DAD1)
+            SARA: 101552719(DAD1)
             LAV: 100668954(DAD1)
             TMU: 101346803
+            ETF: 101660196(DAD1)
+            DNM: 101424592(DAD1)
             MDO: 100030246(DAD1)
+            GAS: 123237998(DAD1)
             SHR: 100922251(DAD1)
+            AFZ: 127551028
             PCW: 110222473(DAD1)
             OAA: 114816277(DAD1)
             GGA: 395343(DAD1)
             PCOC: 116238927(DAD1)
             MGP: 100547759(DAD1)
             CJO: 107324964(DAD1)
+            TPAI: 128091729(DAD1)
+            LMUT: 125684729(DAD1)
             NMEL: 110391161(DAD1)
             APLA: 113839960(DAD1)
+            AFUL: 116498623(DAD1)
             TGU: 100190043(DAD1)
             LSR: 110480575(DAD1)
             SCAN: 103821560(DAD1)
             PMOA: 120504507(DAD1)
+            OTC: 121347643(DAD1)
+            PRUF: 121351102(DAD1)
             PHI: 102111795(DAD1)
             PMAJ: 107215222(DAD1)
             CCAE: 111940153(DAD1)
             CCW: 120411337(DAD1)
             ETL: 114071424(DAD1)
+            ZAB: 102071909(DAD1)
+            ACHL: 103807339(DAD1)
+            SVG: 106864006(DAD1)
+            MMEA: 130586680(DAD1)
             FPG: 101915950(DAD1)
             FCH: 102051701(DAD1)
             NNI: 104012045(DAD1)
             ACUN: 113489118(DAD1)
+            TALA: 104364753(DAD1)
+            ACHC: 115345150(DAD1)
+            HALD: 104314822(DAD1)
+            HLE: 104834895(DAD1)
+            AGEN: 126038795
+            GCL: 127026539
+            CCRI: 104159895(DAD1)
+            EHS: 104509568
+            MUI: 104536728(DAD1)
+            SHAB: 115617713(DAD1)
+            DPUB: 104299633(DAD1)
+            PGUU: 104472380(DAD1)
+            CPEA: 104393574(DAD1)
+            AVIT: 104277094(DAD1)
+            CVF: 104289564(DAD1)
+            CUCA: 104067498(DAD1)
             AAM: 106488048(DAD1)
+            AROW: 112961688(DAD1)
+            NPD: 112958508(DAD1)
+            TGT: 104567291(DAD1)
+            DNE: 112995091(DAD1)
+            SCAM: 104144830(DAD1)
             AMJ: 102564033(DAD1)
             CMY: 114022273(DAD1)
-            CPIC: 101932508(DAD1)
+            DCC: 119841907(DAD1)
+            MRV: 120379811(DAD1)
             ACS: 100555505(dad1)
             PVT: 110070179(DAD1)
+            SUND: 121932527(DAD1)
             PBI: 103053715(DAD1)
             PMUR: 107287152(DAD1)
+            CTIG: 120302055(DAD1)
             PGUT: 117658775(DAD1)
+            PTEX: 113449829(DAD1)
+            NSS: 113427467(DAD1)
+            VKO: 123021489(DAD1)
             PMUA: 114581786(DAD1)
             ZVI: 118094649(DAD1)
+            HCG: 128330512(DAD1)
             GJA: 107113451(DAD1)
+            STOW: 125444602(DAD1)
+            EMC: 129338995(DAD1)
             XLA: 108714902(dad1.L) 397721(dad1.S)
             XTR: 549694(dad1)
             NPR: 108788449(DAD1)
+            RTEM: 120930312 120940642(DAD1)
+            BBUF: 120989004(DAD1)
+            BGAR: 122923676(DAD1)
+            MUO: 115457789 115457791
+            GSH: 117350280(DAD1) 117362222
             DRE: 566527(dad1)
             SRX: 107713681 107726313 107729986
             SANH: 107663540(dad1) 107687594
             SGH: 107558269 107600203
             CCAR: 109055462 109084863
             CAUA: 113041323 113079324 113082665 113087661 113112837
-            IPU: 100528505(dad1)
+            CGIB: 127937357 127950950 128011772
+            PTET: 122322949 122322956 122332880
+            LROH: 127154347 127174029(dad1)
+            PPRM: 120482085(dad1)
+            MAMB: 125250853(dad1) 125260634
+            CIDE: 127494788 127504732
+            MASI: 127441001 127443186
+            TROS: 130549693(dad1)
+            IPU: 100528505(dad1) 128628820
             PHYP: 113530713 113533288
+            SMEO: 124399037 124402969
+            TFD: 113645223 113655004
             AMEX: 103040403 103046192
+            CMAO: 118797438 118822389
             EEE: 113582350 113591467(dad1)
+            CHAR: 105906985(dad1)
             TRU: 101077296(dad1)
+            TFS: 130538323(dad1)
             TNG: GSTEN00015177G001
             LCO: 104931853(dad1)
             NCC: 104950782(dad1)
+            CGOB: 115022775(dad1)
             ELY: 117271717(dad1)
+            EFO: 125902667(dad1)
             PLEP: 121951740(dad1)
             SLUC: 116057980(dad1)
+            ECRA: 117954058(dad1)
+            ESP: 116699558(dad1)
+            PFLV: 114565282(dad1)
             GAT: 120816170(dad1)
+            PPUG: 119209868(dad1)
+            AFB: 129113128(dad1)
+            CLUM: 117746175(dad1)
             MSAM: 119902518(dad1)
+            SCHU: 122886802(dad1)
+            CUD: 121519667(dad1)
+            ALAT: 119011421(dad1)
             MZE: 101483140(dad1)
             ONL: 100712496(dad1)
             OAU: 116313205(dad1)
@@ -161,34 +292,58 @@ GENES       HSA: 1603(DAD1)
             XCO: 114145780(dad1)
             XHE: 116721346(dad1)
             PRET: 103478906(dad1)
+            PFOR: 103138430(dad1)
+            PLAI: 106962977(dad1)
+            PMEI: 106931988(dad1)
+            GAF: 122841825(dad1)
             CVG: 107098277(dad1)
+            CTUL: 119793308(dad1)
+            GMU: 124869582(dad1)
             NFU: 107384223(dad1)
             KMR: 108238613(dad1)
             ALIM: 106514950(dad1)
+            NWH: 119414489(dad1)
             AOCE: 111585568(dad1)
+            MCEP: 125011137(dad1)
             CSEM: 103396204(dad1)
             POV: 109641044(dad1)
-            LCF: 108883958(dad1)
+            SSEN: 122774028 122774038(dad1)
+            HHIP: 117778944(dad1)
+            HSP: 118118162(dad1)
+            LCF: 108883958
             SDU: 111223827(dad1)
             SLAL: 111648456 111653892(dad1)
             XGL: 120799025(dad1)
             HCQ: 109515504(dad1)
+            SSCV: 125985088
             BPEC: 110170450(dad1)
             MALB: 109962660(dad1)
+            BSPL: 114844840(dad1)
             SASA: 100846962(dad1) 106613943(DAD1)
+            STRU: 115192462
             OTW: 112231032 112251819
             OMY: 100301747(dad1)
+            OGO: 123996899 124037080
+            ONE: 115108468 115145480
+            OKI: 109897500 109901571
             SALP: 111972379 111975723
+            SNH: 120051842 120054500
+            CCLU: 121533368 121539886 123490561
             ELS: 105006962(dad1)
             SFM: 108929574(dad1) 108937910
             PKI: 111846226 111857164
+            AANG: 118226039(dad1)
             LOC: 102690720(dad1)
             PSPA: 121305323 121306867
             ARUT: 117398335(dad1)
+            PSEX: 120524626(dad1)
             LCM: 102347331(DAD1)
             CMK: 103186440 103186441
             RTP: 109934151(dad1)
+            CPLA: 122546652(dad1)
+            LERI: 129696247(dad1)
             BFO: 118418410
+            BBEL: 109473738
             CIN: 100186610
             SCLV: 120332187 120332189 120333698
             SPU: 578220
@@ -199,31 +354,51 @@ GENES       HSA: 1603(DAD1)
             DSI: Dsimw501_GD22410(Dsim_GD22410)
             DYA: Dyak_GE11027
             DSR: 110183828
-            DPO: Dpse_GA12252
+            DPO: 4817967
             DPE: 6593842
             DMN: 108162199
             DWI: 6643820
-            DGR: Dgri_GH11354 Dgri_GH23638
+            DGR: 6562143
             DMO: Dmoj_GI12966
             DAZ: 108611083
             DNV: 115563601
             DHE: 111598948
+            CCAT: 101455410
+            BOD: 106624253
+            RZE: 108362884 108380442
             MDE: 101895870
+            SCAC: 106094445
             LCQ: 111691021
+            LSQ: 119616485
+            HIS: 119647327
             AGA: AgaP_AGAP008491
             ACOZ: 120957899
             AARA: 120904554
+            AMER: 121595973
+            ASTE: 118511238
+            AALI: 118456392
             AAG: 5573948
             AALB: 109421304
             CQU: CpipJ_CPIJ003512
             CPII: 120423108
+            CNS: 116341592
+            BCOO: 119070886
             AME: 727568
+            ACER: 108001961
+            ALAB: 122714441
+            ADR: 102672822
+            AFLR: 100871542
             BIM: 100744147
+            BBIF: 117217096
+            BVK: 117236423
+            BVAN: 117154564
             BTER: 100648186
+            BPYO: 122576457
             CCAL: 108629858
             OBB: 114879715
             MGEN: 117222395
             NMEA: 116426199
+            CGIG: 122402242
             SOC: 113006056
             MPHA: 105830097
             AEC: 105151883
@@ -238,12 +413,32 @@ GENES       HSA: 1603(DAD1)
             PGC: 109853477
             OBO: 105278404
             PCF: 106792730
+            PFUC: 122514106
+            VPS: 122634829
             NVI: 100115214
+            TPRE: 106651502
+            LHT: 122499274
+            LBD: 127291297
             MDL: 103579051
+            CGLO: 123259580
+            FAS: 105266286
+            DAM: 107036039
+            AGIF: 122861135
+            CINS: 118069839
+            CCIN: 107267000
+            DSM: 124412262
+            NPT: 124210907
+            NFB: 124175267
+            NLO: 107217048
+            NVG: 124296834
             TCA: 655163
             DPA: 109543589
+            SOY: 115889372
+            AGRG: 126736664
             ATD: 109594828
+            CSET: 123306395
             AGB: 108907568
+            LDC: 111507150
             NVL: 108557289
             APLN: 108734454
             OTU: 111421387
@@ -251,12 +446,22 @@ GENES       HSA: 1603(DAD1)
             BMAN: 114243783
             MSEX: 115450453
             DPL: KGM_209890
+            BANY: 112046109
+            NIQ: 126774786
+            VCD: 124537206
             PMAC: 106715714
             PRAP: 110994774
+            PBX: 123716026
+            PNAP: 125049450
             ZCE: 119831706
+            CCRC: 123699374
             HAW: 110376296
+            HZE: 124638536
             TNL: 113505277
+            SLIU: 111362914
+            OFU: 114361750
             PXY: 105390295
+            CFEL: 113365742
             API: 100158788
             DNX: 107172907
             AGS: 114132656
@@ -264,12 +469,29 @@ GENES       HSA: 1603(DAD1)
             BTAB: 109043213
             DCI: 103507955
             CLEC: 106665335
+            HHAL: 106684770
             NLU: 111046672
+            HVI: 124353409 124374549
             PHU: Phum_PHUM477820
+            FOC: 113213526
+            TPAL: 117648031
+            SGRE: 126272567
+            IEL: 124164321
             FCD: 110842566
             DPX: DAPPUDRAFT_300829
+            DMK: 116917175
+            DPZ: 124338167
             PVM: 113807651
+            PJA: 122258944
+            PCHN: 125032425
+            PMOO: 119596950
+            HAME: 121867687
+            PCLA: 123770569
+            PTRU: 123501577
+            ESN: 127004938
+            HAZT: 108669776
             EAF: 111703640
+            LSM: 121124064
             ISC: IscW_ISCW024010
             DSV: 119453312 119453313
             RSAN: 119400164
@@ -278,19 +500,26 @@ GENES       HSA: 1603(DAD1)
             VJA: 111261290 111268307
             TUT: 107362756
             DPTE: 113797498
+            DFR: 124489870
             CSCU: 111632540
             PTEP: 107452294
+            LPOL: 106466636
+            PMEO: 129581875 129598339
             CEL: CELE_F57B10.10(dad-1)
-            CBR: CBG12659(Cbr-dad-1)
+            CBR: CBG_12659(Cbr-dad-1)
+            CRQ: GCK72_002894
+            BMY: BM_BM13899(Bma-dad-1)
             LOA: LOAG_04386
             NAI: NECAME_00249
             TSP: Tsp_06764
             HRO: HELRODRAFT_155584
             LGI: LOTGIDRAFT_193969
             GAE: 121388567
+            HRF: 124112221
+            HRJ: 124285602
             OBI: 106881992
+            OSN: 115220850
             SMM: Smp_020770
-            SHX: MS3_0011996
             EGL: EGR_08945
             NVE: 5506285
             EPA: 110240141
@@ -298,7 +527,9 @@ GENES       HSA: 1603(DAD1)
             AMIL: 114965088
             PDAM: 113667533
             SPIS: 111342076
+            XEN: 124436768
             HMG: 101238201
+            HSY: 130613843
             TAD: TRIADDRAFT_55825
             AQU: 100641079
             ATH: AT1G32210(ATDAD1) AT2G35520(DAD2)
@@ -307,7 +538,7 @@ GENES       HSA: 1603(DAD1)
             CSAT: 104741816 104757591 104777254 104781956 104786002 104792310
             EUS: EUTSA_v10009144mg EUTSA_v10017441mg
             BRP: 103840178 103868894
-            BNA: 106364576 106386974 106435230 106437489
+            BNA: 106364576 106386974 106435230 106437489 125608900
             BOE: 106294464 106334472
             RSZ: 108819386 108830197 108837904 108851036
             THJ: 104798491 104814414
@@ -315,6 +546,7 @@ GENES       HSA: 1603(DAD1)
             CIT: 102608102 102618059
             CIC: CICLE_v10002883mg CICLE_v10013120mg
             PVY: 116108634
+            MINC: 123196451 123223145
             TCC: 18606822
             GRA: 105764978 105789384
             GHI: 107938550 107946666 107946773
@@ -329,12 +561,15 @@ GENES       HSA: 1603(DAD1)
             VUN: 114174005
             CCAJ: 109799894
             APRC: 113872392
-            MTR: MTR_3g023120 MTR_5g029240
+            MTR: 11421886 11430971
+            TPRA: 123911229 123916119
             CAM: 101506930 101513449
+            PSAT: 127085706 127119785
             ADU: 107457621
             AIP: 107609347
             AHF: 112702360 112764725
             LANG: 109331313 109333087 109333088 109349073
+            PCIN: 129311475
             FVE: 101293446
             RCN: 112172010
             PPER: 18768279 18780603
@@ -342,6 +577,7 @@ GENES       HSA: 1603(DAD1)
             PAVI: 110767398 110770649
             PDUL: 117612135 117623792
             MDM: 103436627 103444498
+            MSYL: 126587991 126621530
             PXB: 103956543
             ZJU: 107411918
             MNT: 21387147
@@ -360,7 +596,8 @@ GENES       HSA: 1603(DAD1)
             PEU: 105121516 105128237
             PALZ: 118028738 118039213
             JRE: 108998103 109014280
-            QSU: 112012095 112013359 112014082
+            CILL: 122281438 122290312
+            QSU: 112012095
             QLO: 115969849
             TWL: 119986691 120016369
             VVI: 100265958
@@ -368,7 +605,8 @@ GENES       HSA: 1603(DAD1)
             SLY: 543753(DAD1)
             SPEN: 107026978
             SOT: 102583095 102584025
-            CANN: 107871035(DAD1)
+            SSTN: 125841383
+            CANN: 107871035 124890351
             NTA: 107768807(NtDAD1) 107809964 107812492
             NSY: 104221936
             NTO: 104103635 104116759
@@ -378,7 +616,10 @@ GENES       HSA: 1603(DAD1)
             SIND: 105155948 105156017
             OEU: 111381222 111396368
             EGT: 105950942 105964502
+            SSPL: 121767833 121770951 121783593 121785858 121789079
+            APAN: 127240149 127263042
             HAN: 110865001 110899436 110899437
+            ECAD: 122595574 122600047 122600905
             LSV: 111884190 111918124
             CCAV: 112501748 112527877
             DCR: 108206652
@@ -388,25 +629,33 @@ GENES       HSA: 1603(DAD1)
             CQI: 110688866 110739867
             NNU: 104590594 104611456
             MING: 122076692 122088288
+            TSS: 122645584 122663832 122663902
             PSOM: 113287373 113308018 113310431 113320674
-            NCOL: 116263904
             OSA: 4335701
             DOSA: Os04t0397000-01(Os04g0397000)
             OBR: 102715567
+            OGL: 127772276
             BDI: 100834948
             ATS: 109752285 109752290 109768939
             TDC: 119288193 119329673 119330444 119340141 119340468
+            TAES: 100682414 100682442 123149112 123149463 123160457 123160639 123166133 123168889
+            TUA: 125520796 125548378
+            LPER: 127311612 127333815
+            LRD: 124667393 124667404 124676620 124677314
             SBI: 8067914
-            ZMA: 541686(fdad1)
+            ZMA: 541686
             SITA: 101784437
+            SVS: 117852104
             PVIR: 120650916 120671051 120692225 120702376
             PHAI: 112872952
             PDA: 103704778 103704779 103704781 103723966
             EGU: 105059942 105061165
             MUS: 103970667 103992075
+            ZOF: 121969596 121974733 122036311 122042731 122047246 122053417
             DCT: 110112853
             PEQ: 110034004
             AOF: 109831760 109835648
+            NCOL: 116263904
             ATR: 18440537
             SMO: SELMODRAFT_146333 SELMODRAFT_158248
             PPP: 112284433 112293215
@@ -419,6 +668,8 @@ GENES       HSA: 1603(DAD1)
             GSL: Gasu_19630
             CCP: CHC_T00010072001
             SCE: YOR103C(OST2)
+            SEUB: DI49_4940
+            SPAO: SPAR_O02370
             AGO: AGOS_ADL261C
             ERC: Ecym_5348
             KLA: KLLA0_C13365g
@@ -431,9 +682,10 @@ GENES       HSA: 1603(DAD1)
             NDI: NDAI_0F02630(NDAI0F02630)
             TPF: TPHA_0F01670(TPHA0F01670)
             TBL: TBLA_0B01400(TBLA0B01400)
-            TDL: TDEL_0F01350(TDEL0F01350)
             TGB: HG536_0D03440
+            TDL: TDEL_0F01350(TDEL0F01350)
             KAF: KAFR_0D02030(KAFR0D02030)
+            KNG: KNAG_0I01940(KNAG0I01940)
             ZMK: HG535_0A02970
             PPA: PAS_chr2-2_0346
             DHA: DEHA2F09460g
@@ -449,9 +701,11 @@ GENES       HSA: 1603(DAD1)
             YLI: YALI0E08646g
             CLU: CLUG_05148
             CLUS: A9F13_03g00869
-            CAUR: CJI97_003519
+            CAUR: CJI96_0002023
             PKZ: C5L36_0E00800
             BBRX: BRETT_002839
+            OPA: HPODL_02885
+            SLUD: SCDLUD_002913
             NCR: NCU09216
             NTE: NEUTE1DRAFT125851(NEUTE1DRAFT_125851)
             SMP: SMAC_00392
@@ -459,6 +713,7 @@ GENES       HSA: 1603(DAD1)
             TTT: THITE_2113728
             CTHR: CTHT_0067430
             MGR: MGG_05758
+            PPEI: PpBr36_05258
             TMN: UCRPA7_6586
             SSCK: SPSK_03637
             FGR: FGSG_07091
@@ -466,13 +721,17 @@ GENES       HSA: 1603(DAD1)
             FVR: FVEG_08082
             FOX: FOXG_01713
             NHE: NECHADRAFT_78998
+            FFC: NCS54_00552900
             TRE: TRIREDRAFT_33342
             TRR: M419DRAFT_24294
             MAW: MAC_06168
             MAJ: MAA_04387
             PLJ: VFPFJ_05284
+            PTKZ: JDV02_001190(OST2)
             VDA: VDAG_03041
             CFJ: CFIO01_03752
+            CLUP: CLUP02_05795
+            CHIG: CH63R_00846
             SAPO: SAPIO_CDS3452
             ELA: UCREL1_11367
             PFY: PFICI_02070
@@ -487,15 +746,18 @@ GENES       HSA: 1603(DAD1)
             NFI: NFIA_020860
             ANG: ANI_1_502164(An18g03920)
             AFV: AFLA_000706
+            ALUC: AKAW2_31207S(OST2)
+            ACHE: ACHE_11559S(OST2)
+            APUU: APUU_40319A(OST2)
             PCS: Pc16g08190
             PDP: PDIP_21400
-            TMF: PMAA_055110
+            TMF: EYB26_008174
             TRG: TRUGW13939_00565
             CIM: CIMG_04620
             CPW: CPC735_071840
+            URE: UREG_01822
             PBL: PAAG_05749
             PBN: PADG_07639
-            URE: UREG_01822
             AJE: HCAG_04601
             BGH: BDBG_04603
             PNO: SNOG_04260
@@ -506,12 +768,14 @@ GENES       HSA: 1603(DAD1)
             AALT: CC77DRAFT_933574
             ZTR: MYCGRDRAFT_86073
             PFJ: MYCFIDRAFT_57812
+            FFU: CLAFUR5_07917
             BCOM: BAUCODRAFT_50729
             NPA: UCRNP2_4526
             TML: GSTUM_00010257001
             SPO: SPAC6F6.05(ost2)
             CNE: CNA04550
             CNB: CNBA4360
+            CNG: CNAG_00473
             CGI: CGB_A4670C
             TMS: TREMEDRAFT_23799
             TVS: TRAVEDRAFT_35527
@@ -524,12 +788,14 @@ GENES       HSA: 1603(DAD1)
             FME: FOMMEDRAFT_90147
             GTR: GLOTRDRAFT_109726
             LBC: LACBIDRAFT_312020(OST2)
-            MPR: MPER_06208 MPER_08511
-            MRR: Moror_1620
             CCI: CC1G_00458
-            SCM: SCHCODRAFT_230988
             ABP: AGABI1DRAFT57815(AGABI1DRAFT_57815)
             ABV: AGABI2DRAFT202912(AGABI2DRAFT_202912)
+            PCUB: JR316_0004986
+            MPR: MPER_06208 MPER_08511
+            MRR: Moror_1620
+            MORE: E1B28_004040
+            SCM: SCHCO_02624379(SCHCODRAFT_02624379)
             CPUT: CONPUDRAFT_81956
             SLA: SERLADRAFT_413707
             WSE: WALSEDRAFT_38152
@@ -540,6 +806,7 @@ GENES       HSA: 1603(DAD1)
             MRT: MRET_3660
             MSYM: MSY001_1236
             PGR: PGTG_09898
+            PTRC: PtA15_11A385
             MLR: MELLADRAFT_37233
             SRE: PTSG_09775
             DDI: DDB_G0291049(ost2)
@@ -550,9 +817,12 @@ GENES       HSA: 1603(DAD1)
             PFA: PF3D7_0726800
             PFD: PFDG_00134
             PFH: PFHG_02185
+            PREI: PRSY57_0723600
+            PGAB: PGSY75_0726800
             PYO: PY17X_0212300
-            PCB: PCHAS_020930
+            PCB: PCHAS_0209300
             PBE: PBANKA_0210900
+            PVV: PVVCY_0201060
             PKN: PKNH_0211400
             PVX: PVX_081645
             PCY: PCYB_022170
@@ -565,7 +835,7 @@ GENES       HSA: 1603(DAD1)
             PSOJ: PHYSODRAFT_361148
             SPAR: SPRG_09683 SPRG_09690
             NGR: NAEGRDRAFT_67330
-            TVA: TVAG_380410
+            TVA: TVAG_2v0925050
             PCU: PC_RS04660
 REFERENCE   PMID:15831493
   AUTHORS   Chavan M, Yan A, Lennarz WJ
