@@ -1,142 +1,146 @@
 test.kegg.compound.wsList <- function(conn) {
 
-	results <- conn$wsList(retfmt='ids')
-	testthat::expect_is(results, 'character')
-	testthat::expect_true(length(results) > 100)
+    results <- conn$wsList(retfmt='ids')
+    testthat::expect_is(results, 'character')
+    testthat::expect_true(length(results) > 100)
 }
 
 test.kegg.compound.wsFind <- function(db) {
 
-	results <- db$wsFind(query = 'NADPH')
-	testthat::expect_true( ! is.null(results))
-	testthat::expect_true( ! is.na(results))
-	testthat::expect_true(is.character(results))
-	readtc <- textConnection(results, "r", local = TRUE)
-	df <- read.table(readtc, sep = "\t", quote = '', stringsAsFactors = FALSE)
-	testthat::expect_true(nrow(df) > 1)
-	testthat::expect_true(df[1, 1] == 'cpd:C00005')
+    results <- db$wsFind(query = 'NADPH')
+    testthat::expect_true( ! is.null(results))
+    testthat::expect_true( ! is.na(results))
+    testthat::expect_true(is.character(results))
+    readtc <- textConnection(results, "r", local = TRUE)
+    df <- read.table(readtc, sep = "\t", quote = '', stringsAsFactors = FALSE)
+    testthat::expect_true(nrow(df) > 1)
+    testthat::expect_true(df[1, 1] == 'cpd:C00005')
 
-	df.2 <- db$wsFind(query = 'NADPH', retfmt = 'parsed') 
-	testthat::expect_is(df.2, 'data.frame')
-	testthat::expect_true(identical(df, df.2))
+    df.2 <- db$wsFind(query = 'NADPH', retfmt = 'parsed') 
+    testthat::expect_is(df.2, 'data.frame')
+    testthat::expect_true(identical(df, df.2))
 
-	ids <- db$wsFind(query = 'NADPH', retfmt = 'ids') 
-	testthat::expect_is(ids, 'character')
-	testthat::expect_true(identical(ids, df[[1]]))
-	testthat::expect_true(ids[[1]] == 'cpd:C00005')
+    ids <- db$wsFind(query = 'NADPH', retfmt = 'ids') 
+    testthat::expect_is(ids, 'character')
+    testthat::expect_true(identical(ids, df[[1]]))
+    testthat::expect_true(ids[[1]] == 'cpd:C00005')
 }
 
 test.kegg.compound.wsFindExactMass <- function(db) {
 
-	# Test single mass
-	results <- db$wsFindExactMass(mass=174.05)
-	expect_true( ! is.null(results))
-	expect_true( ! is.na(results))
-	expect_true(is.character(results))
-	readtc <- textConnection(results, "r", local=TRUE)
-	df <- read.table(readtc, sep="\t", quote='', stringsAsFactors=FALSE)
-	expect_true(nrow(df) > 1)
+    withr::local_options(lifecycle_verbosity = "quiet")
 
-	# Test data frame
-	df.2 <- db$wsFindExactMass(mass=174.05, retfmt='parsed')
-	expect_true(identical(df, df.2))
+    # Test single mass
+    results <- db$wsFindExactMass(mass=174.05)
+    expect_true( ! is.null(results))
+    expect_true( ! is.na(results))
+    expect_true(is.character(results))
+    readtc <- textConnection(results, "r", local=TRUE)
+    df <- read.table(readtc, sep="\t", quote='', stringsAsFactors=FALSE)
+    expect_true(nrow(df) > 1)
 
-	# Test IDs
-	ids <- db$wsFindExactMass(mass=174.05, retfmt='ids')
-	expect_true( ! is.null(ids))
-	expect_true( all(! is.na(ids)))
-	expect_true(is.character(ids))
-	expect_true(identical(df[[1]], ids))
+    # Test data frame
+    df.2 <- db$wsFindExactMass(mass=174.05, retfmt='parsed')
+    expect_true(identical(df, df.2))
 
-	# Test mass range
-	ids <- db$wsFindExactMass(mass.min=174, mass.max=174.35, retfmt='ids')
-	expect_true( ! is.null(ids))
-	expect_true( all(! is.na(ids)))
-	expect_true(is.character(ids))
-	expect_true(length(ids) > 1)
+    # Test IDs
+    ids <- db$wsFindExactMass(mass=174.05, retfmt='ids')
+    expect_true( ! is.null(ids))
+    expect_true( all(! is.na(ids)))
+    expect_true(is.character(ids))
+    expect_true(identical(df[[1]], ids))
+
+    # Test mass range
+    ids <- db$wsFindExactMass(mass.min=174, mass.max=174.35, retfmt='ids')
+    expect_true( ! is.null(ids))
+    expect_true( all(! is.na(ids)))
+    expect_true(is.character(ids))
+    expect_true(length(ids) > 1)
 }
 
 test.kegg.compound.wsFindMolecularWeight <- function(db) {
 
-	# Test single mass
-	results <- db$wsFindMolecularWeight(mass = 300)
-	expect_true( ! is.null(results))
-	expect_true( ! is.na(results))
-	expect_true(is.character(results))
-	readtc <- textConnection(results, "r", local = TRUE)
-	df <- read.table(readtc, sep = "\t", quote = '', stringsAsFactors = FALSE)
-	expect_true(nrow(df) > 1)
+    withr::local_options(lifecycle_verbosity = "quiet")
 
-	# Test data frame
-	df.2 <- db$wsFindMolecularWeight(mass = 300, retfmt = 'parsed')
-	expect_true(identical(df, df.2))
+    # Test single mass
+    results <- db$wsFindMolecularWeight(mass = 300)
+    expect_true( ! is.null(results))
+    expect_true( ! is.na(results))
+    expect_true(is.character(results))
+    readtc <- textConnection(results, "r", local = TRUE)
+    df <- read.table(readtc, sep = "\t", quote = '', stringsAsFactors = FALSE)
+    expect_true(nrow(df) > 1)
 
-	# Test IDs
-	ids <- db$wsFindMolecularWeight(mass = 300, retfmt = 'ids')
-	expect_true( ! is.null(ids))
-	expect_true( all(! is.na(ids)))
-	expect_true(is.character(ids))
-	expect_true(identical(df[[1]], ids))
+    # Test data frame
+    df.2 <- db$wsFindMolecularWeight(mass = 300, retfmt = 'parsed')
+    expect_true(identical(df, df.2))
 
-	# Test mass range
-	ids <- db$wsFindMolecularWeight(mass.min = 300, mass.max = 310, retfmt = 'ids')
-	expect_true( ! is.null(ids))
-	expect_true( all(! is.na(ids)))
-	expect_true(is.character(ids))
-	expect_true(length(ids) > 1)
+    # Test IDs
+    ids <- db$wsFindMolecularWeight(mass = 300, retfmt = 'ids')
+    expect_true( ! is.null(ids))
+    expect_true( all(! is.na(ids)))
+    expect_true(is.character(ids))
+    expect_true(identical(df[[1]], ids))
+
+    # Test mass range
+    ids <- db$wsFindMolecularWeight(mass.min = 300, mass.max = 310, retfmt = 'ids')
+    expect_true( ! is.null(ids))
+    expect_true( all(! is.na(ids)))
+    expect_true(is.character(ids))
+    expect_true(length(ids) > 1)
 }
 
 test.kegg.compound.getPathwayIds_issue_333_20190507 <- function(conn) {
 
-	# Compound
-	c <- 'C05402'
+    # Compound
+    c <- 'C05402'
 
-	# Pathways returned that contain this compound in their compound list.
-	goodpws <- c('mmu00052', 'mmu01100', 'mmu02010')
+    # Pathways returned that contain this compound in their compound list.
+    goodpws <- c('mmu00052', 'mmu01100', 'mmu02010')
 
-	# Pathways linked through gene that do not contain this compound in their compound list.
-	wrongpws <- c("mmu00561", "mmu00600", "mmu00603", "mmu04142")
+    # Pathways linked through gene that do not contain this compound in their compound list.
+    wrongpws <- c("mmu00561", "mmu00600", "mmu00603", "mmu04142")
 
-	# Get all pathways
-	ids <- conn$getPathwayIds(c, 'mmu')
-	testthat::expect_is(ids, 'character')
-	testthat::expect_true(length(ids) > 0)
-	testthat::expect_true(any(goodpws %in% ids))
-	testthat::expect_false(any(wrongpws %in% ids))
+    # Get all pathways
+    ids <- conn$getPathwayIds(c, 'mmu')
+    testthat::expect_is(ids, 'character')
+    testthat::expect_true(length(ids) > 0)
+    testthat::expect_true(any(goodpws %in% ids))
+    testthat::expect_false(any(wrongpws %in% ids))
 }
 
 test.kegg.compound.getPathwayIds_issue_338_20190517 <- function(conn) {
 
-	# Compound
-	atp <- 'C00002'
-	adp <- 'C00008'
+    # Compound
+    atp <- 'C00002'
+    adp <- 'C00008'
 
-	# Pathway that should be found (among others)
-	pw <- 'mmu00190'
+    # Pathway that should be found (among others)
+    pw <- 'mmu00190'
 
-	# Get all pathways
-	for (comp in c(adp, atp)) {
-		ids <- conn$getPathwayIds(comp, 'mmu')
-		testthat::expect_is(ids, 'character')
-		testthat::expect_true(length(ids) > 0)
-		testthat::expect_true(pw %in% ids)
-	}
+    # Get all pathways
+    for (comp in c(adp, atp)) {
+        ids <- conn$getPathwayIds(comp, 'mmu')
+        testthat::expect_is(ids, 'character')
+        testthat::expect_true(length(ids) > 0)
+        testthat::expect_true(pw %in% ids)
+    }
 }
 
 test.kegg.compound.getPathwayIds <- function(conn) {
-	comp <- 'C00134'
-	ids <- conn$getPathwayIds(comp, 'mmu')
-	testthat::expect_is(ids, 'character')
-	testthat::expect_true(length(ids) > 0)
+    comp <- 'C00134'
+    ids <- conn$getPathwayIds(comp, 'mmu')
+    testthat::expect_is(ids, 'character')
+    testthat::expect_true(length(ids) > 0)
 }
 
 test.kegg.compound.getPathwayIdsPerCompound <- function(conn) {
-	c = 'C00134'
-	ids = conn$getPathwayIdsPerCompound(c, 'mmu')
-	testthat::expect_is(ids, 'list')
-	testthat::expect_true(c %in% names(ids))
-	testthat::expect_is(ids[[c]], 'character')
-	testthat::expect_true(length(ids[[c]]) > 0)
+    c = 'C00134'
+    ids = conn$getPathwayIdsPerCompound(c, 'mmu')
+    testthat::expect_is(ids, 'list')
+    testthat::expect_true(c %in% names(ids))
+    testthat::expect_is(ids[[c]], 'character')
+    testthat::expect_true(length(ids[[c]]) > 0)
 }
 
 test.addInfo <- function(conn) {
