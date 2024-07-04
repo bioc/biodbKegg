@@ -55,19 +55,20 @@ test_getDecoratedGraphPicture_not_a_compound = function(conn) {
 
 test_extractPathwayMapShapes <- function(conn) {
 
-    pw <- 'map00500'
+  pw <- 'map00500'
 
-    items <- c('3.2.1.133'=2, '3.2.1.1'=2, # Enzymes.
-               'C00089'=2, 'C00103'=1 # Compounds.
-    )
+  # Items to number of shapes
+  items <- c('3.2.1.133'=2, '3.2.1.1'=2, # Enzymes.
+             'C00089'=2, 'C00103'=2 # Compounds.
+  )
 
-    for (i in names(items)) {
-        color2ids <- c(red=i)
-        shapes <- conn$extractPathwayMapShapes(id=pw, color2ids=color2ids)
-        labels <- vapply(shapes, function(x) x$getLabel(), FUN.VALUE='')
-        testthat::expect_length(shapes, items[[i]])
-        testthat::expect_true(all(labels == i))
-    }
+  for (i in names(items)) {
+    color2ids <- c(red=i)
+    shapes <- conn$extractPathwayMapShapes(id=pw, color2ids=color2ids)
+    labels <- vapply(shapes, function(x) x$getLabel(), FUN.VALUE='')
+    testthat::expect_length(shapes, items[[i]])
+    testthat::expect_true(all(labels == i))
+  }
 }
 
 # Set context
