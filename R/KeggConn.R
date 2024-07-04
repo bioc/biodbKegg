@@ -173,20 +173,25 @@ private=list(
 
 ,searchByText=function(ids, fields) {
 
-    for (text.field in c('accession', 'name', 'composition', 'description'))
-        if (text.field %in% names(fields)) {
-            chk::chk_character(fields[[text.field]])
-            chk::chk_length(fields[[text.field]], 1)
-            if ( ! is.na(fields[[text.field]])) {
-                text.ids <- self$wsFind(fields[[text.field]],
-                    retfmt='ids.no.prefix')
-                if ( ! is.null(text.ids) && any( ! is.na(text.ids)))
-                    ids <- (if (is.null(ids)) text.ids else
-                        ids[ids %in% text.ids])
-            }
-        }
+  for (text.field in c('accession', 'name', 'composition', 'description'))
+    if (text.field %in% names(fields)) {
+      chk::chk_character(fields[[text.field]])
+      chk::chk_length(fields[[text.field]], 1)
+      if ( ! is.na(fields[[text.field]])) {
 
-    return(ids)
+        txt <- fields[[text.field]] 
+
+        # XXX Remove everything after the first special chars, the search web
+        # service is broken (2024-07-04) and returns an empty result when
+        # special chars are inside the query.
+        txt <- sub("[^a-zA-Z0-9_-].*$", "", txt)
+        text.ids <- self$wsFind(txt, retfmt='ids.no.prefix')
+        if ( ! is.null(text.ids) && any( ! is.na(text.ids)))
+          ids <- (if (is.null(ids)) text.ids else ids[ids %in% text.ids])
+      }
+    }
+
+  return(ids)
 }
 
 ,searchByMass=function(ids, fields) {
