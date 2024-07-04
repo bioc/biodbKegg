@@ -31,7 +31,7 @@ Imports:
     biodb (>= 1.4.2),
     chk,
     lifecycle
-RoxygenNote: 7.2.1
+RoxygenNote: 7.3.2
 Collate:
     'KeggShape.R'
     'KeggCircle.R'
