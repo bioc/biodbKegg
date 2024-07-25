@@ -181,10 +181,12 @@ private=list(
 
         txt <- fields[[text.field]] 
 
-        # XXX Remove everything after the first special chars, the search web
-        # service is broken (2024-07-04) and returns an empty result when
-        # special chars are inside the query.
-        txt <- sub("[^a-zA-Z0-9_-].*$", "", txt)
+        # XXX Remove all special characters, the search web service is broken
+        # (since at least 2024-07-04) and returns an empty result when special
+        # chars are inside the query.
+        txt <- sub("^[^a-zA-Z0-9_-]+", "", txt)
+        txt <- sub("[^a-zA-Z0-9_-]+$", "", txt)
+        txt <- gsub("[^a-zA-Z0-9_-]+", "+", txt)
         text.ids <- self$wsFind(txt, retfmt='ids.no.prefix')
         if ( ! is.null(text.ids) && any( ! is.na(text.ids)))
           ids <- (if (is.null(ids)) text.ids else ids[ids %in% text.ids])
