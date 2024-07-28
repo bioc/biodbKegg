@@ -32,7 +32,7 @@ mybiodb$terminate()
 \code{\link{KeggConn}}.
 }
 \section{Super classes}{
-\code{\link[biodb:BiodbConnBase]{biodb::BiodbConnBase}} -> \code{\link[biodb:BiodbConn]{biodb::BiodbConn}} -> \code{\link[biodbKegg:KeggConn]{biodbKegg::KeggConn}} -> \code{KeggEnzymeConn}
+\code{\link[biodb:BiodbConnBase]{biodb::BiodbConnBase}} -> \code{\link[biodb:BiodbConn]{biodb::BiodbConn}} -> \code{biodbKegg::KeggConn} -> \code{KeggEnzymeConn}
 }
 \section{Methods}{
 \subsection{Public methods}{

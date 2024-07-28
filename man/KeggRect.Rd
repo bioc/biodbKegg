@@ -36,7 +36,7 @@ r$draw()
 \code{\link{KeggShape}}, \code{\link{KeggCircle}}.
 }
 \section{Super class}{
-\code{\link[biodbKegg:KeggShape]{biodbKegg::KeggShape}} -> \code{KeggRect}
+\code{biodbKegg::KeggShape} -> \code{KeggRect}
 }
 \section{Methods}{
 \subsection{Public methods}{

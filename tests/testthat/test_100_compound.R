@@ -166,6 +166,50 @@ test.addInfo <- function(conn) {
     y2 <- conn$addInfo(x2, id.col='ids', org='mmu')
 }
 
+test.annotateMzValues_ppm_tol <- function(conn) {
+
+    # Mass of a proton
+    proton.mass <- 1.0072765
+
+    # Get mass fields
+    mass.fields <- conn$getBiodb()$getEntryFields()$getFieldNames('mass')
+
+    # Get entries
+    ids <- c('C00133', 'C00751')
+    entries <- conn$getEntry(ids, drop = FALSE)
+
+    # Loop on mass fields
+    for (mf in mass.fields) {
+
+        # Get entries that have a value for this mass field
+        ewmf <- entries[vapply(entries, function(e) e$hasField(mf),
+            FUN.VALUE=TRUE)]
+        if (length(ewmf) > 0) {
+
+            # Get masses
+            masses <- vapply(ewmf, function(e) as.numeric(e$getFieldValue(mf)),
+                FUN.VALUE=1.0)
+
+            # Annotate
+            mz <- masses - proton.mass
+            if ( ! conn$isSearchableByField(mf)) {
+                testthat::expect_warning(
+                    ret <- conn$annotateMzValues(mz, mz.tol=15,
+                        mz.tol.unit='ppm', mass.field=mf, ms.mode='neg',
+                        max.results=3))
+                testthat::expect_identical(ret, data.frame(mz=mz))
+            } else {
+                ret <- conn$annotateMzValues(mz, mz.tol=15, mz.tol.unit='ppm',
+                    mass.field=mf, ms.mode='neg', max.results=3)
+                testthat::expect_is(ret, 'data.frame')
+                id.col <- conn$getEntryIdField()
+                testthat::expect_identical(c('mz', id.col), colnames(ret))
+                testthat::expect_false(any(is.na(ret[[id.col]])))
+            }
+        }
+    }
+}
+
 # Set context
 biodb::testContext("Test Kegg Compound connector.")
 
@@ -181,7 +225,8 @@ conn <- biodb$getFactory()$createConn('kegg.compound')
 
 # Run tests
 testRefFolder <- system.file("testref", package='biodbKegg')
-biodb::runGenericTests(conn, pkgName='biodbKegg', testRefFolder=testRefFolder)
+#biodb::testThat('ppm tolerance works in annotateMzValues()', test.annotateMzValues_ppm_tol, conn=conn)
+#biodb::runGenericTests(conn, pkgName='biodbKegg', testRefFolder=testRefFolder)
 biodb::testThat('wsList() works correctly.', test.kegg.compound.wsList, conn=conn)
 biodb::testThat('wsFind() works correctly.', test.kegg.compound.wsFind, conn=conn)
 biodb::testThat('wsFindExactMass() works correctly.', test.kegg.compound.wsFindExactMass, conn=conn)

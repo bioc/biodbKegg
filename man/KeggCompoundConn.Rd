@@ -38,7 +38,7 @@ mybiodb$terminate()
 \code{\link{KeggConn}}, \code{\link{KeggPathwayConn}}.
 }
 \section{Super classes}{
-\code{\link[biodb:BiodbConnBase]{biodb::BiodbConnBase}} -> \code{\link[biodb:BiodbConn]{biodb::BiodbConn}} -> \code{\link[biodbKegg:KeggConn]{biodbKegg::KeggConn}} -> \code{KeggCompoundConn}
+\code{\link[biodb:BiodbConnBase]{biodb::BiodbConnBase}} -> \code{\link[biodb:BiodbConn]{biodb::BiodbConn}} -> \code{biodbKegg::KeggConn} -> \code{KeggCompoundConn}
 }
 \section{Methods}{
 \subsection{Public methods}{

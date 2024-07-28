@@ -21,7 +21,7 @@ mybiodb$terminate()
 
 }
 \section{Super classes}{
-\code{\link[biodb:BiodbEntry]{biodb::BiodbEntry}} -> \code{\link[biodb:BiodbTxtEntry]{biodb::BiodbTxtEntry}} -> \code{\link[biodbKegg:KeggEntry]{biodbKegg::KeggEntry}} -> \code{KeggPathwayEntry}
+\code{\link[biodb:BiodbEntry]{biodb::BiodbEntry}} -> \code{\link[biodb:BiodbTxtEntry]{biodb::BiodbTxtEntry}} -> \code{biodbKegg::KeggEntry} -> \code{KeggPathwayEntry}
 }
 \section{Methods}{
 \subsection{Public methods}{
