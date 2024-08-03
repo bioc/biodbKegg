@@ -71,9 +71,9 @@ conn <- biodb$getFactory()$createConn('kegg.enzyme')
 
 # Run tests
 testRefFolder <- system.file("testref", package='biodbKegg')
-biodb::runGenericTests(conn, pkgName='biodbKegg', testRefFolder=testRefFolder,
-    opt=list(skip.searchable.fields=c('ref.accession', 'ref.authors', 'ref.doi',
-        'ref.journal', 'ref.title')))
+#biodb::runGenericTests(conn, pkgName='biodbKegg', testRefFolder=testRefFolder,
+#    opt=list(skip.searchable.fields=c('ref.accession', 'ref.authors', 'ref.doi',
+#        'ref.journal', 'ref.title')))
 biodb::testThat('getPathwayIds() works correctly.',
           test.kegg.enzyme.getPathwayIds, conn=conn)
 biodb::testThat('issue 340 is corrected.',

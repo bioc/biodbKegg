@@ -3,5 +3,6 @@
 # testthat::test_dir documentation.
 library(testthat)
 library(biodbKegg)
+library(withr)
 Sys.setenv(TESTTHAT_REPORTER = "summary")
 test_check("biodbKegg")

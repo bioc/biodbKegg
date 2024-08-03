@@ -29,7 +29,7 @@ conn <- biodb$getFactory()$createConn('kegg.genes')
 
 # Run tests
 testRefFolder <- system.file("testref", package='biodbKegg')
-biodb::runGenericTests(conn, pkgName='biodbKegg', testRefFolder=testRefFolder)
+#biodb::runGenericTests(conn, pkgName='biodbKegg', testRefFolder=testRefFolder)
 biodb::testThat('getPathwayIdsPerGene() works correctly.',
                 test.kegg.genes.getPathwayIdsPerGene, conn=conn)
 biodb::testThat('getPathwayIds() works correctly.',

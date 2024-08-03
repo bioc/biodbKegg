@@ -45,7 +45,7 @@ c1$draw()
 \code{\link{KeggShape}}, \code{\link{KeggRect}}.
 }
 \section{Super class}{
-\code{biodbKegg::KeggShape} -> \code{KeggCircle}
+\code{\link[biodbKegg:KeggShape]{biodbKegg::KeggShape}} -> \code{KeggCircle}
 }
 \section{Methods}{
 \subsection{Public methods}{
